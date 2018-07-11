@@ -1,5 +1,10 @@
 # Elm &ndash; programWithFlags + subscriptions + ports
 
+* passes `Date.now()` via `Flags`
+* subscribes to `Time.every Time.second`, stores result in `Model`, and in `view`
+* echoes (`Debug.log`) through `Ports` `outbound` & `inbound`
+
+
 ## Compile & Run
 
 ```sh
@@ -12,6 +17,7 @@ elm make src/Main.elm src/*.elm --output dist/elm.js
 $ ./make.sh
 $ open dist/index.html
 ```
+
 
 ## App Structure
 
