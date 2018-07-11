@@ -1,4 +1,4 @@
-# Elm &mdash; programWithFlags + subscriptions + ports
+# Elm &ndash; programWithFlags + subscriptions + ports
 
 ## Compile & Run
 
@@ -15,10 +15,10 @@ $ open dist/index.html
 
 ## App Structure
 
-* `src/Types.elm` &mdash; shared types, e.g. `Model`, `Msg(..)`
-* `src/App.elm` &mdash; `init`, `update`, `subscriptions`, and `view`
-* `src/Main.elm` &mdash; `Main.main : Program Flags Model Msg`
-* `src/Ports.elm` &mdash; echo via JS using `outbound` & `inbound`
+* `src/Types.elm` &ndash; shared types, e.g. `Model`, `Msg(..)`
+* `src/App.elm` &ndash; `init`, `update`, `subscriptions`, and `view`
+* `src/Main.elm` &ndash; `Main.main : Program Flags Model Msg`
+* `src/Ports.elm` &ndash; echo via JS using `outbound` & `inbound`
 
 ```javascript
 //// index.html ///
