@@ -1,4 +1,4 @@
-# Elm &ndash; programWithFlags + subscriptions + ports
+# Elm &ndash; flags + subscriptions + ports
 
 * passes `Date.now()` via `Flags`
 * subscribes to `Time.every Time.second`, stores result in `Model`, and in `view`
