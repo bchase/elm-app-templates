@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src='elm.js'></script>
+  </head>
+
+  <body>
+    <div id="elm"/>
+  </body>
+
+  <script type='text/javascript'>
+    (function(){
+      var flags = { time : Date.now() }
+      var node  = document.getElementById('elm')
+      var app   = Elm.Main.embed(node, flags)
+
+      app.ports.outbound.subscribe(function(str){
+        app.ports.inbound.send(str)
+      })
+    })()
+  </script>
+</html>

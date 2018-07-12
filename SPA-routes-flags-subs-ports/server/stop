@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+kill `cat .pid`
+rm .pid

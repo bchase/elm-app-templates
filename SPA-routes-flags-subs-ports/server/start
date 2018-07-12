@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+PORT=${1:-8080} ruby server/sinatra.rb >/dev/null 2>/dev/null &
+PID=$!
+echo $PID > .pid
